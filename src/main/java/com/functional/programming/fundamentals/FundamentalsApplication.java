@@ -1,13 +1,18 @@
 package com.functional.programming.fundamentals;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FundamentalsApplication {
+public class FundamentalsApplication implements CommandLineRunner {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FundamentalsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(FundamentalsApplication.class, args);
+    }
 
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println("Running from CommandLineRunner...");
+    }
 }
