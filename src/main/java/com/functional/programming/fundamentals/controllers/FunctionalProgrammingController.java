@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.function.Function;
 
 @RestController
-@RequestMapping("/functionalProgramming")
+@RequestMapping("/functionalInterface")
 public class FunctionalProgrammingController {
 
     /**
@@ -19,7 +19,7 @@ public class FunctionalProgrammingController {
      * @param param the string
      * @return the string in lowercase
      */
-    @GetMapping("/functionalInterface/function/{param}")
+    @GetMapping("/function/{param}")
     public ResponseEntity<String> useFunctionInterface(@PathVariable("param") String parameter) {
         Function<String, String> function = String::toLowerCase;
         return new ResponseEntity<>(function.apply(parameter), HttpStatus.OK);
