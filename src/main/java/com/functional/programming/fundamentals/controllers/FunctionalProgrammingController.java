@@ -16,7 +16,7 @@ import java.util.function.Function;
 public class FunctionalProgrammingController {
 
     /**
-     * Uses a functional function interface to obtain lowercase from a string passed to as a path variable.
+     * Uses a functional interface function to obtain a lowercase string from the parameter passed as PathVariable.
      *
      * @param param the string
      * @return the string in lowercase
